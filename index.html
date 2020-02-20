@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+             <link rel="stylesheet" href="circle.css">
+      <style>
+/* Center the loader */
+          
+          body{
+              width: 800px;
+                margin: 0 auto;
+          }
+#loader {
+                position: absolute;
+                position: absolute;
+                left: 800px;
+                top: 220px;
+                z-index: 1;
+                width: 120%;
+                height: 120%;
+            }
+          
+.logo{
+-webkit-animation: spin1 1s 3 linear;
+-moz-animation: spin1 1s 3 linear;
+-o-animation: spin1 1s 3 linear;
+-ms-animation: spin1 1s 3 linear;
+animation: spin1 1s 3 linear;
+    display: block;
+}
+ 
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+} 
+    
+          
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+    #myDiv {
+      display: none;
+    }
+
+          
+.FirstText{
+    font-size: 20px;
+              
+}
+#header{
+              margin-top: 30px;
+                margin-left: 345px;
+}
+#name{
+              
+              display: none;
+              font-family: 'Noto Sans', sans-serif;
+              font-size: 20px; 
+                margin-top: 30px;
+                margin-left: -130px;
+          }
+          
+    #title{
+            font-family:cursive;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-left: -50px;
+            font-style: bold;
+          }
+          
+          .slidecontainer {
+              margin-left: 40px;
+          }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+          
+          
+          
+            .clearfix:before,.clearfix:after {content: " "; display: table;}
+            .clearfix:after {clear: both;}
+            .clearfix {*zoom: 1;}
+          .clearfix{
+              margin-left: 300px;
+              margin-top: 30px;
+              
+            
+          }
+          .bt1{
+            margin-left: 390px;
+              margin-bottom: 100px;
+          }
+          
+@media only screen and (max-width: 1100px) {
+  body {
+      width: 900px;
+  }
+              .slidecontainer {
+              margin-left: 20px;
+          }
+    .slider{
+        width: 90%;
+    }
+    
+    
+     
+    #loader {
+
+        left: 280px;
+        top: 280px;
+        width: 130%;
+        height: 130%;
+        }
+       
+      #name{    
+        font-size: 18px; 
+        margin-top: 30px;
+        margin-left: -100px;
+          }
+          
+    #title{
+        font-size: 34px; 
+        margin-top: 40px;
+         margin-left: -70px;
+          }  
+        
+        
+
+}
+          
+@media only screen and (max-width: 768px) {
+  body {
+      width: 768px;
+  }
+              .slidecontainer {
+              margin-left: 20px;
+          }
+
+    .slider{
+        width: 70%;
+    }
+    
+    .bt1{
+        margin-left: 240px;
+        margin-bottom: 100px;
+    }
+    #header{
+    margin-top: 30px;
+    margin-left: 220px;
+}
+    
+    .clearfix{
+        margin-left: 160px;
+        margin-top: 30px;    
+          }
+    
+     
+    #loader {
+
+        left: 280px;
+        top: 280px;
+        width: 130%;
+        height: 130%;
+        }
+       
+      #name{    
+        font-size: 18px; 
+        margin-top: 30px;
+        margin-left: -100px;
+          }
+          
+    #title{
+        font-size: 34px; 
+        margin-top: 40px;
+         margin-left: -70px;
+          }  
+        
+    
+
+}
+          
+          
+@media only screen and (max-width: 414px) {
+  body {
+      width: 414px;
+  }
+              .slidecontainer {
+              margin-left: 20px;
+          }
+
+    .slider{
+        width: 90%;
+    }
+    
+    .bt1{
+        margin-left: 150px;
+        margin-bottom: 100px;
+    }
+    #header{
+    margin-top: 30px;
+        margin-bottom:30px;
+    margin-left: 120px;
+}
+    
+    .clearfix{
+        margin-left: 80px;
+        margin-top: 30px;    
+          }
+    
+    #loader {
+
+        left: 160px;
+        top: 180px;
+        width: 130%;
+        height: 130%;
+        }
+    
+    #name{    
+        font-size: 15px; 
+        margin-top: 30px;
+        margin-left: -100px;
+          }
+          
+    #title{
+        font-size: 30px; 
+        margin-top: 30px;
+         margin-left: -50px;
+          }
+}  
+          
+          
+@media only screen and (max-width: 375px) {
+  body {
+      width: 375px;
+  }
+              .slidecontainer {
+              margin-left: 20px;
+          }
+
+    .slider{
+        width: 90%;
+    }
+    
+    .bt1{
+        margin-left: 140px;
+        margin-bottom: 100px;
+    }
+    #header{
+    margin-top: 30px;
+        margin-bottom:30px;
+    margin-left: 120px;
+}
+    
+    .clearfix{
+        margin-left: 60px;
+        margin-top: 30px;    
+          }
+    
+
+}      
+   
+          
+</style>
+</head>
+<body onload="myFunction()">
+
+<div id="loader"><img class="logo" src="logo%204.jpg">
+    <div id="title">Our App Name</div>
+    <p id="name">Team Sapatnekar & Bioscience Innovations</p>
+    
+    </div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">About</a>
+     
+    </div>
+  </div>
+</nav>
+    
+    
+    
+  <p class="FirstText" id="header">Neuromodulator</p>
+                <div class="clearfix">
+
+                <div class="c100 p99 big green">
+                    <span>99%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+
+
+                </div>
+    
+    
+    <div class="slidecontainer">
+          <p>Select Current Level: </p>
+  <input type="range" min="1" max="200" value="100" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+ 
+    <p>Select Time Duration: </p>
+      
+<input type="range" min="1" max="200" value="100" class="slider" id="myRange2">
+  <p>Value: <span id="demo2"></span></p>
+</div>
+    
+ <button type="button" class="btn btn-success bt1">Start</button> 
+</div>
+
+    
+
+    
+    
+    
+    
+    
+    
+<script>
+var myVar;
+var myVar2;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+  myVar2 = setTimeout(showPage2, 5000);
+}
+
+function showPage() {
+    document.getElementById("name").style.display = "block";
+
+}
+ function showPage2() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+    
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+var slider2 = document.getElementById("myRange2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+</script>
+      
+      
+      
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
