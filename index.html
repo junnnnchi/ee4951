@@ -361,8 +361,9 @@ animation: spin1 1s 3 linear;
   <p class="FirstText" id="header">Neuromodulator</p>
                 <div class="clearfix">
 
-                <div class="c100 p99 big green">
-                    <span>99%</span>
+                <div class="c100 p89 big green">
+                    <span>89%</span>
+					
                     <div class="slice">
                         <div class="bar"></div>
                         <div class="fill"></div>
@@ -384,7 +385,7 @@ animation: spin1 1s 3 linear;
   <p>Value: <span id="demo2"></span></p>
 </div>
     
- <button type="button" class="btn btn-success bt1">Start</button> 
+ <button type="button" class="btn btn-success bt1" id = "start" onClick="startFunction()">Start</button> 
 </div>
 
     
@@ -398,7 +399,10 @@ animation: spin1 1s 3 linear;
 <script>
 var myVar;
 var myVar2;
-
+var pageCount = localStorage.getItem("backPage");
+	if (backPage == 1){
+		alert("D");
+	}
 function myFunction() {
   myVar = setTimeout(showPage, 3000);
   myVar2 = setTimeout(showPage2, 5000);
@@ -427,6 +431,11 @@ output2.innerHTML = slider2.value;
 
 slider2.oninput = function() {
   output2.innerHTML = this.value;
+}
+
+
+function startFunction(){
+	location.replace("display.html");
 }
 </script>
       

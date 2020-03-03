@@ -1,0 +1,122 @@
+<head>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<style>
+		body{
+			
+			width:500px;
+			height: 600px;
+		}
+		#stop{
+			margin-top: -100px;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, #ff6699 0%, #ff6666 100%);
+			text-align: center;
+			 border-radius: 25px;
+			 color: white;
+			
+		}
+		#stopText{
+			padding-top:30%;
+			font-size: 100px;
+		}
+		
+		
+		
+		
+		
+		         
+@media only screen and (max-width: 1100px) {
+  body {
+      width: 900px;
+  }
+             
+}
+          
+@media only screen and (max-width: 768px) {
+  body {
+      width: 768px;
+  }
+              
+}
+          
+          
+@media only screen and (max-width: 414px) {
+  body {
+      width: 414px;
+  }
+}  
+          
+          
+@media only screen and (max-width: 375px) {
+  body {
+      width: 375px;
+  }
+}     
+	</style>
+</head>
+
+<body>
+	 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">About</a>
+     
+    </div>
+  </div>
+</nav>
+	
+	
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+	<div id='stop' onClick="back()">
+		<p id="stopText">
+			STOP
+		
+		</p>
+	
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+	
+
+
+var trace2 = {
+  x: [2, 3, 4, 5,6,7,8,9,10],
+  y: [6, 5, 7, 7,7,5,6,5, 6],
+  mode: 'lines',
+  name: 'Lines'
+};
+
+
+
+var data = [trace2];
+
+var layout = {
+  title: 'Actual current level',
+  xaxis: {
+    title: 'Time'
+  },
+  yaxis: {
+    title: 'current (mA)'
+  }
+};
+
+Plotly.newPlot('myDiv', data, layout);
+function back(){
+	history.go(-1);
+	localStorage.setItem("backPage",1);
+}
+	</script>
+</body>
